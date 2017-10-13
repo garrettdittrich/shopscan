@@ -1,0 +1,45 @@
+<ion-header >
+  <ion-navbar color="primary">
+    <ion-title>
+      <p id="title"> ShopScan</p>
+    </ion-title>
+
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<script src="http://jsconsole.com/remote.js?abc123"></script>
+
+<ion-content padding>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>  
+      <ion-label> Sam</ion-label>
+      </ion-item>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+  <h1>
+    <button ion-button color="primary" full round (click)="scan()">Scan Bar Code</button>
+    <ion-spinner *ngIf="loading" id="spinning" name="bubbles"></ion-spinner>
+  </h1>
+
+  <ion-card align-self-center *ngIf="productFound">
+      
+    <ion-card-header>
+      <h2>Price: $ </h2>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li></li>
+        <li>{{productName}}</li>
+        <li>UPC: {{upc_code}}</li>
+        <img  width="50%" src="{{productImage}}">
+      </ul>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,15 @@
+[
+  {
+    "plu":"070847017554",
+    "name":"Monster Energy Ultra Red",
+    "price":2,
+    "desc":"Zero calorie energy drink",
+    "image":"https://images-na.ssl-images-amazon.com/images/I/51-qUKROQ5L.jpg"
+  },
+  {
+    "plu":"01234567898",
+    "name":"Intel Core i7 3.3GHz",
+    "price":200,
+    "desc":"Intel Core i7 3.3GHz L2 16MB 4.6ns"
+  }
+]
